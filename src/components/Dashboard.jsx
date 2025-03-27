@@ -41,6 +41,12 @@ const Dashboard = () => {
           <MovieCard key={movie.id} movie={movie} />
         ))}
       </div>
+      <button 
+                onClick={() => navigate('/add-movie')} 
+                style={{ marginBottom: '20px', padding: '10px 20px', cursor: 'pointer' }}
+            >
+                Add Movie
+            </button>
     </div>
   );
 };
